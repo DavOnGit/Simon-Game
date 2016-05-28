@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $(document).ready(function(){
 	let iOS = /iPad|iPhone|iPod/.test(navigator.platform);
 	if( iOS ) {
@@ -7,53 +7,7 @@ $(document).ready(function(){
 	        background_videos[i].parentNode.removeChild(background_videos[i]);
 	    }
 	}
-=======
 
-// let iOS = /iPad|iPhone|iPod/.test(navigator.platform);
-// if( iOS ) {
-//     var background_videos = document.querySelectorAll('.bgvid');
-//     for( i=0; i<background_videos.length; i++ ) {
-//         background_videos[i].parentNode.removeChild(background_videos[i]);
-//     }
-// }
-
-$(document).ready(function(){
-
-	if (localStorage.getItem("demo") === null) {
-		var oReq = new XMLHttpRequest();
-		var url = "http://encoding.com.result.s3.amazonaws.com/574960b7c4fea3206b98299299a004e9_386231_208279910.mp4";
-		oReq.open('POST', url, true);
-		oReq.responseType = "arraybuffer";console.log(oReq.response);
-		oReq.onload = function(oEvent) {
-			let blob = new Blob([oReq.response], {type: 'video/mp4'});
-			let reader = new FileReader();
-			reader.readAsDataURL(blob);
-			reader.onload = function(e) {
-				var dataURL = reader.result;
-				localStorage.setItem("demo", dataURL);
-				location.reload();
-			}
-			oReq.send();
-		}
-	}
-
-	var videlem = document.createElement("video");
-	videlem.autoplay = true;
-	videlem.loop = true;
-	videlem.poster = "https://www.dropbox.com/s/gfsu9tdeaam9kas/Coffee-Shot.jpg?raw=1";
-	videlem.id = "bgvid";
-	var sourceMP4 = document.createElement("source");
-	sourceMP4.type = "video/mp4";
-	sourceMP4.src = localStorage.getItem("demo");
-	sourceMP4.autoPlay = true;
-	videlem.appendChild(sourceMP4);
-	document.body.appendChild(videlem);
-
-});
-
-
-$(document).ready(function(){
->>>>>>> 7a8198bc029e2c4d226aa40105b134bce3e49655
 	let fade_in_videos = document.querySelectorAll('.fade-in-video');
 	for( i=0; i<fade_in_videos.length; i++ ) {
 	    fade_in_videos[i].addEventListener("playing", function(){
