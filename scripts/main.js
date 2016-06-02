@@ -305,7 +305,7 @@ let inputCheck = function(note) {
 		playSound(note);
 		copy.shift();
 
-		if (!copy.length && sequence.length >= 1) {
+		if (!copy.length && sequence.length >= 20) {
 			disableBoard();
 			setTimeout(function() {
 				finalAnimation()
