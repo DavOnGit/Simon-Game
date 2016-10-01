@@ -1,4 +1,4 @@
-[![Website](https://img.shields.io/website-up-down-green-red/https/davongit.github.io/Simon-Game%2F.svg?maxAge=2592000)](https://davongit.github.io/Simon-Game/)
+[![Website](https://img.shields.io/website/https://davongit.github.io/Simon-Game.svg?maxAge=2592000)](https://davongit.github.io/Simon-Game/)
 [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/DavOnGit/myown)
 [![License](https://img.shields.io/cocoapods/l/AFNetworking.svg)](http://doge.mit-license.org)
 
