@@ -12,7 +12,7 @@ So let's [PLAY!](https://davongit.github.io/Simon-Game/)
 
 ```sh
 $ git clone https://github.com/DavOnGit/Simon-Game.git # or clone your own fork
-$ cd timestamp-microservice
+$ cd Simon-Game
 $ npm install
 $ npm start
 ```
